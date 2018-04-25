@@ -1,0 +1,33 @@
+if you want to you want to pass parameters to your script you can use json.
+
+Our platform have few buit-in parameters and you can create you oun.
+
+1. Buit-in parameters
+url - this parameter usually using as site url
+site - similar. 
+query - is you need to create query to search engine or search on site, you can pass your query here
+num_pages - if you walking thru site, you can use this parameter to generate walk path
+time_on_site - if you need to limit bot time on site, then you can pass this parameter.
+quantity - if you need execute your script few times, then pass this parameter, for example 1000
+dt_from - if you want to specify date start of your script, than use this parameter. Default from now.
+dt_to - if you want to specify date end of your script, than use this parameter. Default as soon as possible.
+
+Lets see few examples.
+echo '{
+    "projectId": "4195574",
+    "promotions": [
+        {
+            "query": "dsfsdf.ru",
+            "url": "https://www.ikea.com/ru/ru/catalog/products/50387221/",
+            "time_on_site": 300,
+            "num_pages": 3,
+            "quantity": 1,
+            "promoType": 131,
+            "text": "'`cat $1 | base64 | tr '\n' ' '`'"
+        }
+    ]
+}' > /tmp/bj
+
+curl -X POST -v -H "Content-Type: application/json" -H "X-SERVICE-KEY:$YOURKEY" "https://api.trafficstore.com/promotion/add" -d @/tmp/bj
+
+
