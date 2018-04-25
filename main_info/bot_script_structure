@@ -1,0 +1,45 @@
+Every bot have one main structure
+
+--------------------------
+#!/bin/bash
+
+#include various functions for bot
+source ./help_scripts/var_functions.sh
+source ./help_scripts/bot_bot.sh
+
+#in this part we will parce parameters like url, time on site, num pages and so on
+url=`get_promo_url`
+
+#in this section you init bot parameters: browser prefs, resolution, cookies and so on
+change_resolution
+block_images_from_domain $url
+
+
+#in this section you write bot script
+gen_bot_js start
+goto_url "$url"
+save_page_in_html
+gen_bot_js end
+
+
+#section of work
+start_bot vk_bot.js
+
+#in this part of code we write for-loop, which works 56 seconds.
+for j in `seq 1 56`
+do
+	sleep 1
+        is_run=`is_process_run firefox`
+        if [ $is_run -eq 0 ]
+        then
+        	break
+        fi
+done
+                                                        
+
+#additional section to work with parced data from site 
+
+
+#end of job
+
+--------------------------

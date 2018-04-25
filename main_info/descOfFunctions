@@ -1,0 +1,126 @@
+Our platform have a lot of function for bots. Here you can read information
+
+- BOT SCRIPT FUNCTIONS
+
+gen_bot_js start
+goto_url "$url"
+save_page_in_html
+gen_bot_js end
+
+
+- VAR FUNCTION
+
+function get_pid_by_proc_name()                 - get pid of process by name (use it to control or kill process)
+function start_bot()
+function atan()                                 - atan function using bc
+function set_socks_proxy()
+function set_my_proxy()
+function block_images_from_domain()             - if you don't wan to load images from specific domain, use this function
+function unblock_images_from_domain()           - unblock domain with images
+function get_displays()
+function set_imacros_speed()
+function set_ff_locale()
+function check_site_error_code()
+function modify_modifyheaders()
+function mouse_move()
+function click_by_xy()
+function scroll_mouse()
+function get_exit_ip()                          - using our API, you can get your IP proxy
+function get_exit_country()                     - using our API, you can get exit country of your proxy
+function copy_file_to_webdav()                  - if you want copy file to your webdav dir, use this function
+function create_dir_webdav()                    - to create directory on webdav use this function
+function get_random_proxy()                     - 
+function setup_out_address()
+function update_etc_hosts()                     - with this function you can change /etc/hosts entries
+function change_proxy()
+function is_process_run()
+function ff_trackerprotection()
+function ff_send_referer()
+function disable_session_restore_ff()
+function disable_blocklist_ff()
+function set_play_script_time()
+function disable_safebrowsing()
+function get_scripts()
+function update_scripts()
+function get_random_number()                     - if you want generate random number
+function insert_cookie()
+function enable_flash()                          - if you want to enable adobe flash use it. 
+function disable_flash()                         - if you want to disable flash use it
+function delete_cookie_by_like_domain()
+function change_referer_headers()
+function modify_accept_language()
+function ua_and_referer_headers()
+function restart_tor()                           - if you using tor, you can restart it with this function
+function set_tor_countries()                     - with this function you can use Exclude torrc config
+function set_tor_exit_ips()
+function get_random_pos()
+function check_link_on_site()
+function check_error_code4site()
+function is_ff_private()
+function make_ff_nprivate()                      - make your browse not private (default it is not private)
+function make_ff_private()                       - make your browse private (default it is not private)
+function send_sms()
+function get_external_ip()
+function get_ip_address()
+function get_mac_address()
+function is_forbidden()
+function is_short_url()
+function resolve_short_url()
+function update_cookie()
+function generate_cookie()
+function delete_cookie_by_domain()
+function delete_all_cookies()                    - clear cookies.sqlite
+function delete_google_cookies()
+function delete_youtube_cookies()
+function delete_adriver_cookies()
+function delete_botscanner_cookies()
+function delete_hotlog_cookies()
+function gen_get_cur_url()
+function login2google()
+function is_host_exist()
+function clean_google_ga_cookies()
+function next_walk_url()
+function is_integer()
+function is_need_update()
+function get_promo_private_percent()
+function get_promo_referrer()
+function get_promo_username()
+function get_promo_pass()
+function get_scripts_version()
+function get_promo_url()
+function get_promo_site()
+function get_promo_scrsht()
+function get_promo_country()
+function get_promo_type()
+function get_promo_query()
+function get_promo_region()
+function get_promo_pd()
+function get_promo_id()
+function get_promo_time_on_site()
+function get_promo_num_pages_walk()
+function generate_walk_path()
+function job_done()                              - use this function is job DONE, REWORK, FAILED or REJECTED
+function clean_files()
+function get_country_by_yandex_id()
+function parce_params()
+function get_job()
+function clean_ff_profile()
+function create_ff_profile()
+function get_ff_profile_by_name()
+function get_ff_window()
+function take_screenshot()
+function change_ya_uid_in_cookie()
+function change_region_in_cookie()
+function change_headers()
+function get_user_agent()
+function get_cur_resolution()                     - get current resolution of bot screen
+function change_resolution()                      - with this function you can make random resolution or pass needed
+function get_urls_from_se()
+function parse_email_from_file()
+function input_keyword_in_se()
+function send_message_telegramm()                 - with this function you can send telegram messages to your chat
+function send_photo_telegram()
+function send_file_telegram()
+function get_random_string_from_file()
+function is_domain_exist()
+function get_domain_from_url()
